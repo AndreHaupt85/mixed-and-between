@@ -86,7 +86,7 @@ color: #FFBA08;
 background: blue;
 padding: 0;
 margin: 0;
-font-size: 45px;
+font-size: 50px;
 height: 10vh;
 display: flex;
 justify-content: center;
