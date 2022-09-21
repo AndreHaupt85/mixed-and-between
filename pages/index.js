@@ -10,38 +10,34 @@ console.log(icon);
 export default function Home() {
   return (
     <div>
-      <div>
-        <Headlinebox>
-          <Headline>Cocktail App</Headline>
-          <div>
-            <Image
-              src={icon}
-              alt="menu icon"
-              width={70}
-              height={70}
-            />
-          </div>
-        </Headlinebox>
-        <Cocktail>
-          <Cocktailbox>
-            <Image
-              src={cocktail}
-              alt="menu icon"
-            />
-            <Cocktailname>
-              Old Fashioned
-            </Cocktailname>
-          </Cocktailbox>
-        </Cocktail>
-        <Search>
-          <form>
-            <label for="quicksearch" ></label>
-            <input type="text" id="quicksearch" />
-            <button>Go</button>
-          </form>
-        </Search>
-      </div>
-    </div >
+      <Headlinebox>
+        <Headline>Cocktail App</Headline>
+        <div>
+          <Image
+            src={icon}
+            alt="menu icon"
+            width={70}
+            height={70}
+          />
+        </div>
+      </Headlinebox>
+      <Cocktail>
+        <Image
+          src={cocktail}
+          alt="menu icon"
+        />
+        <Cocktailname>
+          Old Fashioned
+        </Cocktailname>
+      </Cocktail>
+      <Search>
+        <form>
+          <label for="quicksearch" ></label>
+          <input type="text" id="quicksearch" />
+          <button>Go</button>
+        </form>
+      </Search>
+    </div>
   )
 }
 // Header
@@ -76,11 +72,9 @@ display: flex;
 flex-direction: column;
 align-items: center;
 height: 80vh;
-`
-
-const Cocktailbox = styled.div`
-width: 80vw;
-margin-top: 20px;
+padding-top: 20px;
+padding-left: 20px;
+padding-right: 20px;
 `
 
 const Cocktailname = styled.p`
@@ -96,4 +90,4 @@ font-size: 45px;
 height: 10vh;
 display: flex;
 justify-content: center;
-`
+` 
