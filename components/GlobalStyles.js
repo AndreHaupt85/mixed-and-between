@@ -5,7 +5,9 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box
     }
     body {
-        background-color: #eee
+        background-color: #eee;
+        padding: 0;
+        margin: 0;
     }
 `;
 
