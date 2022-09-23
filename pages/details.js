@@ -1,12 +1,12 @@
 import Image from "next/image";
 import styled from "styled-components";
-import icon from "../src/library_icon.svg"
+import icon from "../src/details_icon.svg"
 
 export default function Library() {
     return (
         <div>
             <Headlinebox>
-                <Headline>Library</Headline>
+                <Headline>Details</Headline>
                 <div>
                     <Image
                         src={icon}
@@ -16,14 +16,21 @@ export default function Library() {
                     />
                 </div>
             </Headlinebox>
-            <Librarybox>
-                Old Fashioned
-            </Librarybox>
+            <Detailsbox>
+                <Cocktailname>Tequila Sunrise</Cocktailname>
+                <Cocktailimage>Cocktailpicture</Cocktailimage>
+                <Cocktailalc>Alcoholoc or not</Cocktailalc>
+                <Cocktailglas>Glas</Cocktailglas>
+                <Cocktailspirits>Spirits</Cocktailspirits>
+                <Cocktailmodifyer>Modifyer</Cocktailmodifyer>
+                <Cocktailfiller>Filler</Cocktailfiller>
+                <Cocktailingreciance>Ingredience</Cocktailingreciance>
+                <Cocktaildescription>Description</Cocktaildescription>
+            </Detailsbox>
         </div>
     )
 }
 
-// Header
 const Headlinebox = styled.div`
 color: #FFBA08;
 background: #7D451B;
@@ -45,6 +52,44 @@ margin: 0;
 font-size: 40px;
 `
 
-const Librarybox = styled.div`
+const Detailsbox = styled.div`
 background: green;
+min-height: 90vh;
+display: grid;
+`
+
+const Cocktailname = styled.p`
+
+`
+
+const Cocktailimage = styled.p`
+
+`
+
+const Cocktailalc = styled.p`
+
+`
+
+const Cocktailglas = styled.p`
+
+`
+
+const Cocktailspirits = styled.p`
+
+`
+
+const Cocktailmodifyer = styled.p`
+
+`
+
+const Cocktailfiller = styled.p`
+
+`
+
+const Cocktailingreciance = styled.p`
+
+`
+
+const Cocktaildescription = styled.p`
+
 `

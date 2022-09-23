@@ -17,13 +17,12 @@ export default function Library() {
                 </div>
             </Headlinebox>
             <Librarybox>
-                Old Fashioned
+                Tequila Sunrise
             </Librarybox>
         </div>
     )
 }
 
-// Header
 const Headlinebox = styled.div`
 color: #FFBA08;
 background: #7D451B;
@@ -47,4 +46,5 @@ font-size: 40px;
 
 const Librarybox = styled.div`
 background: green;
+height: 90vh;
 `
