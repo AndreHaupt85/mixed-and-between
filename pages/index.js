@@ -2,7 +2,7 @@ import Image from "next/image";
 import styled from "styled-components";
 import icon from "../src/cocktail_icon.svg"
 import cocktail from "../src/old_fashioned.jpeg"
-export { default } from "../components/Burger/Burger"
+// export { default } from "../components/Burger/Burger"
 
 export function Home() {
   return (
