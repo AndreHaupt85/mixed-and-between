@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styled from "styled-components";
 import icon from "../src/cocktail_icon.svg"
-import cocktail from "../src/old_fashioned.jpeg"
+import cocktail from "../src/tequila_sunrise.jpeg"
 
 export default function Home() {
   return (
@@ -23,14 +23,14 @@ export default function Home() {
           alt="menu icon"
         />
         <Cocktailname>
-          Old Fashioned
+          Tequila Sunrise
         </Cocktailname>
       </Cocktail>
 
     </div>
   )
 }
-// Header
+
 const Headlinebox = styled.div`
 color: #FFBA08;
 background: #7D451B;
@@ -52,7 +52,6 @@ margin: 0;
 font-size: 40px;
 `
 
-// Random Cocktail
 const Cocktail = styled.div`
 color: #FFBA08;
 background: green;
