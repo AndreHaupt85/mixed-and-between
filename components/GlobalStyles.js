@@ -5,7 +5,8 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box
     }
     body {
-        background-color: #eee;
+        background: ${({ theme }) => theme.primaryDark};
+        color: ${({ theme }) => theme.primaryLight};
         padding: 0;
         margin: 0;
     }
