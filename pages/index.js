@@ -3,10 +3,6 @@ import styled from "styled-components";
 import icon from "../src/cocktail_icon.svg"
 import cocktail from "../src/old_fashioned.jpeg"
 
-
-
-console.log(icon);
-
 export default function Home() {
   return (
     <div>
@@ -30,13 +26,7 @@ export default function Home() {
           Old Fashioned
         </Cocktailname>
       </Cocktail>
-      <Search>
-        <form>
-          <label for="quicksearch" ></label>
-          <input type="text" id="quicksearch" />
-          <button>Go</button>
-        </form>
-      </Search>
+
     </div>
   )
 }
@@ -80,14 +70,3 @@ padding-right: 20px;
 const Cocktailname = styled.p`
 font-size: 45px;
 `
-// Quicksearch
-const Search = styled.div`
-color: #FFBA08;
-background: blue;
-padding: 0;
-margin: 0;
-font-size: 50px;
-height: 10vh;
-display: flex;
-justify-content: center;
-` 
