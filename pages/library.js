@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styled from "styled-components";
-import icon from "../src/library_icon.svg"
+import icon from "../src/icons/library_icon.svg"
 
 export default function Library() {
     return (

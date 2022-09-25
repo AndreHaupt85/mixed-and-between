@@ -1,0 +1,613 @@
+[
+    "Cocktails",
+    {
+        "ID": "R-0000001",
+        "Name": "Tequila Sunrise",
+        "Spirits": {
+            "Tequila": "3cl"
+        },
+        "Modifyer": {
+            "Grenadine": "1cl"
+        },
+        "Filler": {
+            "Orangensaft": "fill up"
+        },
+        "Decoration": {
+            "Orangenscheibe": "1/2 Stück",
+            "Cocktailkirsche": "1 Stück"
+        },
+        "Instructions": "Shake it and drink it",
+        "Typ": "alkoholhaltig",
+        "Kategorie": "Tropical",
+        "Glas": {
+            "Name": "Cocktailglas",
+            "Bild": "https://www.stoelzle-lausitz-shop.de/pub/media/catalog/product/cache/172e41ccff8b8ee416e8e93847ddf8dc/4/8/483_00_25.jpg"
+        },
+        "Bild": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4NkujZ_IqS6nF2FVGFYxCjhnLOkXyg3tSlA&usqp=CAU"
+    },
+    {
+        "ID": "R-0000002",
+        "Name": "Imanepa",
+        "Spirits": {},
+        "Modifyer": {},
+        "Filler": {
+            "Gingerale": "fill up",
+            "Maracujasaft": "4cl"
+        },
+        "Decoration": {
+            "Rohrzucker": "1 BL",
+            "Limette": "1/2 Stück"
+        },
+        "Instructions": "Crushed Ice  und Limette",
+        "Typ": "alkoholfrei",
+        "Kategorie": "Tropical",
+        "Glas": {
+            "Name": "Tumbler",
+            "Bild": "https://www.luchs-direkt.de/media/image/0b/c8/b0/931973lCb8Dibagf60.jpg"
+        },
+        "Bild": "https://img.chefkoch-cdn.de/rezepte/1352881240037873/bilder/710745/crop-960x720/ipanema.jpg"
+    },
+    {
+        "ID": "R-0000003",
+        "Name": "ABC",
+        "Spirits": {
+            "Amaretto": "2cl",
+            "Baileys Irish Cream": "2cl",
+            "Cognac": "2cl"
+        },
+        "Modifyer": {},
+        "Filler": {},
+        "Decoration": {},
+        "Instructions": "Erst Amaretto, dann Cognac und dann Baileys schichten.",
+        "Typ": "alkoholhaltig",
+        "Kategorie": "Shot",
+        "Glas": {
+            "Name": "Shotglas",
+            "Bild": "https://files.promostore.de/catalog/product/cache/4/image/9df78eab33525d08d6e5fb8d27136e95/1/7/735b14021e8eae7e38a204f8afae7f31/Werbeartikel-Shotglas-65-cl-515528476.jpg"
+        },
+        "Bild": "https://www.thecocktaildb.com/images/media/drink/tqpvqp1472668328.jpg"
+    },
+    {
+        "ID": "R-0000004",
+        "Name": "Bees Knees",
+        "Spirits": {
+            "Rum (braun)": "6cl",
+            "Triple Sec": "2cl"
+        },
+        "Modifyer": {
+            "Limettensaft": "2cl"
+        },
+        "Filler": {
+            "Orangensaft": "2cl"
+        },
+        "Decoration": {
+            "Zitronenzeste": "1 Stück"
+        },
+        "Instructions": "Shake it and drink it",
+        "Typ": "alkoholhaltig",
+        "Kategorie": "Tropical",
+        "Glas": {
+            "Name": "Cocktailschale",
+            "Bild": "https://www.barstuff.de/images/catalog/product/pds/2784-9_h.jpg"
+        },
+        "Bild": "https://www.thecocktaildb.com/images/media/drink/tx8ne41582475326.jpg"
+    },
+    {
+        "ID": "R-0000005",
+        "Name": "Chicago Fizz",
+        "Spirits": {
+            "Rum (weiß)": "3cl",
+            "Portwein": "3cl"
+        },
+        "Modifyer": {
+            "Zucker": "1BL",
+            "Zitronensaft": "1cl",
+            "Eiweiß": "1 Stück"
+        },
+        "Filler": {
+            "Mineralwasser mit Kohlensäure": "fill up"
+        },
+        "Decoration": {
+            "Orangenzeste": "1 Stück"
+        },
+        "Instructions": "Alle Zutaten ohne das Wasser shaken, in ein neues Glas abseihen und mit Wasser auffüllen",
+        "Typ": "alkoholhaltig",
+        "Kategorie": "Highball",
+        "Glas": {
+            "Name": "Lingdrinkglas",
+            "Bild": "https://www.cristalica.de/media/image/product/89881/lg/longdrinkglas-highball-york-450ml-selbst-gestalten.jpg"
+        },
+        "Bild": "https://www.thecocktaildb.com/images/media/drink/qwvwqr1441207763.jpg"
+    },
+    {
+        "ID": "R-0000006",
+        "Name": "Dark and Stormy",
+        "Spirits": {
+            "Rum (braun)": "5cl"
+        },
+        "Modifyer": {},
+        "Filler": {
+            "Gingerbeer": "10cl"
+        },
+        "Decoration": {
+            "Limettenscheibe": "1 Stück"
+        },
+        "Instructions": "Shake it and drink it",
+        "Typ": "alkoholhaltig",
+        "Kategorie": "Tropical",
+        "Glas": {
+            "Name": "Tumbler",
+            "Bild": "https://www.stoelzle-lausitz-shop.de/pub/media/catalog/product/cache/172e41ccff8b8ee416e8e93847ddf8dc/3/5/350_47_.jpg"
+        },
+        "Bild": "https://www.thecocktaildb.com/images/media/drink/t1tn0s1504374905.jpg"
+    },
+    {
+        "ID": "R-0000007",
+        "Name": "English Rose Cocktail",
+        "Spirits": {
+            "Apricot Brandy": "2cl",
+            "Gin": "4cl",
+            "Vermouth (Dry)": "2cl"
+        },
+        "Modifyer": {
+            "Grenadine": "1BL",
+            "Zitronensafe": "1 Dash"
+        },
+        "Filler": {},
+        "Decoration": {
+            "Cocktailkirsche": "1 Stück",
+            "Zucker": "2BL"
+        },
+        "Instructions": "Zuckerrand mit Zitronensaft, Shake alle Zutaten und straine sie in ein Glas. Füge die Kirsche hinzu",
+        "Typ": "alkoholhaltig",
+        "Kategorie": "Tropical",
+        "Glas": {
+            "Name": "Martiniglas",
+            "Bild": "https://www.barstuff.de/images/catalog/product/pds/002-2.jpg"
+        },
+        "Bild": "https://www.thecocktaildb.com/images/media/drink/yxwrpp1441208697.jpg"
+    },
+    {
+        "ID": "R-0000008",
+        "Name": "French 75",
+        "Spirits": {
+            "Gin": "5cl",
+            "Champagner": "12cl"
+        },
+        "Modifyer": {
+            "Limettensaft": "5cl",
+            "Zucker": "2BL"
+        },
+        "Filler": {},
+        "Decoration": {
+            "Orangenzeste": "1 Stück",
+            "Cocktailkirsche": "1 Stück"
+        },
+        "Instructions": "Shake Gin, Zucker und Limettensaftmit Eis. Strain alle Zutaten in ein Sektglas. Gib den Champagner hinzu und rühre leicht um.",
+        "Typ": "alkoholhaltig",
+        "Kategorie": "Tropical",
+        "Glas": {
+            "Name": "Sektglas",
+            "Bild": "https://cdn1.home24.net/images/media/catalog/product/640x640/png/-/1/-1000263126-210429-07365400408-IMAGE-P000000001000263126.webp"
+        },
+        "Bild": "https://www.thecocktaildb.com/images/media/drink/hrxfbl1606773109.jpg"
+    },
+    {
+        "ID": "R-0000009",
+        "Name": "Gideons Green Dinosaur",
+        "Spirits": {
+            "Rum (braun)": "2l",
+            "Vodka": "2cl",
+            "Triple Sec": "2cl",
+            "Tequila": "2cl",
+            "Melonenlikör": "2cl"
+        },
+        "Modifyer": {},
+        "Filler": {
+            "Sprite": "fill up"
+        },
+        "Decoration": {},
+        "Instructions": "Alle Zutaten in einem Glas verrühren.",
+        "Typ": "alkoholhaltig",
+        "Kategorie": "Collins",
+        "Glas": {
+            "Name": "Tumbler",
+            "Bild": "https://www.stoelzle-lausitz-shop.de/pub/media/catalog/product/cache/172e41ccff8b8ee416e8e93847ddf8dc/3/5/350_47_.jpg"
+        },
+        "Bild": "https://www.thecocktaildb.com/images/media/drink/p5r0tr1503564636.jpg"
+    },
+    {
+        "ID": "R-0000010",
+        "Name": "Harvey Wallbanger",
+        "Spirits": {
+            "Vodka": "3cl",
+            "Galliano Vanille": "2cl"
+        },
+        "Modifyer": {},
+        "Filler": {
+            "Orangensaft": "12cl"
+        },
+        "Decoration": {
+            "Orangenscheibe": "1 Stück"
+        },
+        "Instructions": "Vodka und Orangensaft shaken und in ein Longdrinkglas gießen, Galliano Vanille floaten und garnieren.",
+        "Typ": "alkoholhaltig",
+        "Kategorie": "Highball",
+        "Glas": {
+            "Name": "Longdrinkglas",
+            "Bild": "https://www.cristalica.de/media/image/product/89881/lg/longdrinkglas-highball-york-450ml-selbst-gestalten.jpg"
+        },
+        "Bild": "https://www.thecocktaildb.com/images/media/drink/7os4gs1606854357.jpg"
+    },
+    {
+        "ID": "R-0000011",
+        "Name": "Jacks Vanilla Coke",
+        "Spirits": {
+            "Whiskey": "6cl"
+        },
+        "Modifyer": {
+            "Vanille Extrakt": "1BL"
+        },
+        "Filler": {
+            "Cola": "fill up"
+        },
+        "Decoration": {},
+        "Instructions": "Alle Zutaten in einem Glas mit Eiswürfeln langsam umrühren.",
+        "Typ": "alkoholhaltig",
+        "Kategorie": "Highball",
+        "Glas": {
+            "Name": "Longdrinkglas",
+            "Bild": "https://www.cristalica.de/media/image/product/89881/lg/longdrinkglas-highball-york-450ml-selbst-gestalten.jpg"
+        },
+        "Bild": "https://www.thecocktaildb.com/images/media/drink/kjnt7z1504793319.jpg"
+    },
+    {
+        "ID": "R-0000012",
+        "Name": "Kir Royal",
+        "Spirits": {
+            "Champagner": "10clcl",
+            "Creme de Cassis": "1cl"
+        },
+        "Modifyer": {},
+        "Filler": {},
+        "Decoration": {},
+        "Instructions": "Creme de Cassis in eine Sektglas gießen. Champagner über einen Barlöffel hineinlaufen lassen.",
+        "Typ": "alkoholhaltig",
+        "Kategorie": "Champagnercocktail",
+        "Glas": {
+            "Name": "Sektglas",
+            "Bild": "https://cdn1.home24.net/images/media/catalog/product/640x640/png/-/1/-1000263126-210429-07365400408-IMAGE-P000000001000263126.webp"
+        },
+        "Bild": "https://www.thecocktaildb.com/images/media/drink/yt9i7n1504370388.jpg"
+    },
+    {
+        "ID": "R-0000013",
+        "Name": "Lady Love Fizz",
+        "Spirits": {
+            "Gin": "6cl"
+        },
+        "Modifyer": {
+            "Sahne": "2BL",
+            "Zucker": "1BL",
+            "Zitronensaft": "2cl",
+            "Puderzucker": "1BL",
+            "Eiweiß": "1 Stück"
+        },
+        "Filler": {
+            "Mineralwasser mit Kohlensäure": "fill up"
+        },
+        "Decoration": {
+            "Zitronenscheibe": "1 Stück"
+        },
+        "Instructions": "Shake alle Zutaten außer das Wasser, straine es in ein Martiniglas und fülle mit Wasser auf.",
+        "Typ": "alkoholhaltig",
+        "Kategorie": "Tropical",
+        "Glas": {
+            "Name": "Martiniglas",
+            "Bild": "https://www.barstuff.de/images/catalog/product/pds/002-2.jpg"
+        },
+        "Bild": "https://www.thecocktaildb.com/images/media/drink/20d63k1504885263.jpg"
+    },
+    {
+        "ID": "R-0000014",
+        "Name": "Margarita",
+        "Spirits": {
+            "Tequila": "5cl",
+            "Triple Sec": "2cl"
+        },
+        "Modifyer": {
+            "Limettensaft": "3cl"
+        },
+        "Filler": {},
+        "Decoration": {
+            "Zucker": "2BL"
+        },
+        "Instructions": "Martiniglas mit Salzrand versehen, alle zutaten shaken und in das Glas strainen.",
+        "Typ": "alkoholhaltig",
+        "Kategorie": "Tropical",
+        "Glas": {
+            "Name": "Martiniglas",
+            "Bild": "https://www.thecocktaildb.com/images/media/drink/5noda61589575158.jpg"
+        },
+        "Bild": "https://www.thecocktaildb.com/images/media/drink/t1tn0s1504374905.jpg"
+    },
+    {
+        "ID": "R-0000015",
+        "Name": "National Aquarium",
+        "Spirits": {
+            "Rum (braun)": "2cl",
+            "Vodka": "2cl",
+            "Gin": "2cl",
+            "Blue Curacao": "2cl"
+        },
+        "Modifyer": {
+            "Zitronensaft": "3cl",
+            "Zuckersirup": "3cl"
+        },
+        "Filler": {
+            "Sprite": "1spash"
+        },
+        "Decoration": {},
+        "Instructions": "Alle Zutaten außer Sprite shaken und auf Eis eingießen. Mt Sprite toppen.",
+        "Typ": "alkoholhaltig",
+        "Kategorie": "Longdrink",
+        "Glas": {
+            "Name": "Tumbler",
+            "Bild": "https://www.stoelzle-lausitz-shop.de/pub/media/catalog/product/cache/172e41ccff8b8ee416e8e93847ddf8dc/3/5/350_47_.jpg"
+        },
+        "Bild": "https://www.thecocktaildb.com/images/media/drink/dlw0om1503565021.jpg"
+    },
+    {
+        "ID": "R-0000016",
+        "Name": "Old Fashioned",
+        "Spirits": {
+            "Bourbon Whiskey": "5cl"
+        },
+        "Modifyer": {
+            "Angostura Bitter": "2dash"
+        },
+        "Filler": {
+            "Wasser ohne Kohlensäure": "1dash"
+        },
+        "Decoration": {
+            "Zuckerwürfel": "1 Stück",
+            "Cocktailkirsche": "1 Stück",
+            "Orangenzeste": "1 Stück"
+        },
+        "Instructions": "Zuckerwürel ins Glas legen und mit Angosturabitter beträufeln, Wasser hinzufügen und mit dem Stößen zerdrücken. Glas mit Eis füllen und Bourbon hinzufügen",
+        "Typ": "alkoholhaltig",
+        "Kategorie": "Tropical",
+        "Glas": {
+            "Name": "Tumbler",
+            "Bild": "https://www.stoelzle-lausitz-shop.de/pub/media/catalog/product/cache/172e41ccff8b8ee416e8e93847ddf8dc/3/5/350_47_.jpg"
+        },
+        "Bild": "https://www.thecocktaildb.com/images/media/drink/vrwquq1478252802.jpg"
+    },
+    {
+        "ID": "R-0000017",
+        "Name": "Penizillin",
+        "Spirits": {
+            "Scotch Whiskey": "6cl",
+            "Single Malt Scotch Whiskey": "1cl"
+        },
+        "Modifyer": {
+            "Honig": "2BL",
+            "Ingwersirup": "2BL",
+            "Limettensaft": "2cl"
+        },
+        "Filler": {},
+        "Decoration": {
+            "Ingwer": "1 Stück"
+        },
+        "Instructions": "Scotch Whiskey, LimettensaftIngwersirup und Honig shaken und auf Eis im Glas strainen. Single Malt mit einem LLöffel floaten",
+        "Typ": "alkoholhaltig",
+        "Kategorie": "Tropical",
+        "Glas": {
+            "Name": "Tumbler",
+            "Bild": "https://www.stoelzle-lausitz-shop.de/pub/media/catalog/product/cache/172e41ccff8b8ee416e8e93847ddf8dc/3/5/350_47_.jpg"
+        },
+        "Bild": "https://www.thecocktaildb.com/images/media/drink/hc9b1a1521853096.jpg"
+    },
+    {
+        "ID": "R-0000018",
+        "Name": "Queen Charlotte",
+        "Spirits": {
+            "Rotwein": "6cl"
+        },
+        "Modifyer": {
+            "Grenadine": "3cl"
+        },
+        "Filler": {
+            "Sprite": "fill up"
+        },
+        "Decoration": {
+            "Zitronenscheibe": "1 Stück"
+        },
+        "Instructions": "Rotwein und Grenadine in ein Glas auf Eis geben. Mit Sprite auffüllen und langsam umrühren",
+        "Typ": "alkoholhaltig",
+        "Kategorie": "Tropical",
+        "Glas": {
+            "Name": "Tumbler",
+            "Bild": "https://www.stoelzle-lausitz-shop.de/pub/media/catalog/product/cache/172e41ccff8b8ee416e8e93847ddf8dc/3/5/350_47_.jpg"
+        },
+        "Bild": "https://www.thecocktaildb.com/images/media/drink/vqruyt1478963249.jpg"
+    },
+    {
+        "ID": "R-0000019",
+        "Name": "Radioactive Longisland Iced Tea",
+        "Spirits": {
+            "Rum (braun)": "3cl",
+            "Vodka": "3cl",
+            "Tequila": "3cl",
+            "Gin": "3cl",
+            "Triple Sec": "3cl",
+            "Himbeerlikör": "3cl",
+            "Melonenlikör": "3cl",
+            "Malibu": "3cl"
+        },
+        "Modifyer": {},
+        "Filler": {},
+        "Decoration": {},
+        "Instructions": "Alle Zutaten ins Glas geben und umrühren.",
+        "Kategorie": "Tropical",
+        "Glas": {
+            "Name": "Longdrinkglas",
+            "Bild": "https://www.cristalica.de/media/image/product/89881/lg/longdrinkglas-highball-york-450ml-selbst-gestalten.jpg"
+        },
+        "Bild": "https://www.thecocktaildb.com/images/media/drink/rdvqmh1503563512.jpg"
+    },
+    {
+        "ID": "R-0000020",
+        "Name": "Scooter",
+        "Spirits": {
+            "Brandy": "3cl",
+            "Amaretto": "3cl"
+        },
+        "Modifyer": {
+            "Sahne": "3cl"
+        },
+        "Filler": {},
+        "Decoration": {},
+        "Instructions": "Alle Zutaten mit Crushedice shaken. Durch ein Sieb ins Glas schütten",
+        "Typ": "alkoholhaltig",
+        "Kategorie": "Tropical",
+        "Glas": {
+            "Name": "Martiniglas",
+            "Bild": "https://www.thecocktaildb.com/images/media/drink/5noda61589575158.jpg"
+        },
+        "Bild": "https://www.thecocktaildb.com/images/media/drink/twuptu1483388307.jpg"
+    },
+    {
+        "ID": "R-0000021",
+        "Name": "Ulysses",
+        "Spirits": {
+            "Baileys Irish Cream": "6cl",
+            "Vermouth (Dry)": "2cl"
+        },
+        "Modifyer": {},
+        "Filler": {
+            "Grapefruitsaft": "6cl"
+        },
+        "Decoration": {
+            "Orangenscheibe": "1 Stück"
+        },
+        "Instructions": "Alle Zutaten mit shaken und in ein Glas abseihen.",
+        "Typ": "alkoholhaltig",
+        "Kategorie": "Tropical",
+        "Glas": {
+            "Name": "Martiniglas",
+            "Bild": "https://www.thecocktaildb.com/images/media/drink/5noda61589575158.jpg"
+        },
+        "Bild": "http://www.nadilein.de/imageOL7.JPG"
+    },
+    {
+        "ID": "R-0000022",
+        "Name": "Van Vleet",
+        "Spirits": {
+            "Rum (weiß)": "9cl"
+        },
+        "Modifyer": {
+            "Limettensaft": "3cl",
+            "Ahornsirup": "3cl"
+        },
+        "Filler": {},
+        "Decoration": {},
+        "Instructions": "Alle zutaten shaken und ins Glas strainen.",
+        "Typ": "alkoholhaltig",
+        "Kategorie": "Tropical",
+        "Glas": {
+            "Name": "Tumbler",
+            "Bild": "https://www.stoelzle-lausitz-shop.de/pub/media/catalog/product/cache/172e41ccff8b8ee416e8e93847ddf8dc/3/5/350_47_.jpg"
+        },
+        "Bild": "https://www.thecocktaildb.com/images/media/drink/fgq2bl1492975771.jpg"
+    },
+    {
+        "ID": "R-0000023",
+        "Name": "White Russian",
+        "Spirits": {
+            "Vodka": "6cl",
+            "Kaluha": "3cl"
+        },
+        "Modifyer": {
+            "Sahne": "3cl"
+        },
+        "Filler": {},
+        "Decoration": {},
+        "Instructions": "Alle Zutaten shaken und auf Eis ins Glas strainen.",
+        "Typ": "alkoholhaltig",
+        "Kategorie": "Tropical",
+        "Glas": {
+            "Name": "Tumbler",
+            "Bild": "https://www.stoelzle-lausitz-shop.de/pub/media/catalog/product/cache/172e41ccff8b8ee416e8e93847ddf8dc/3/5/350_47_.jpg"
+        },
+        "Bild": "https://www.thecocktaildb.com/images/media/drink/vsrupw1472405732.jpg"
+    },
+    {
+        "ID": "R-0000024",
+        "Name": "Xurinha",
+        "Spirits": {
+            "Erdbeerlimes": "8cl",
+            "Cachaca": "4cl"
+        },
+        "Modifyer": {
+            "Rohrzucker": "2BL"
+        },
+        "Filler": {},
+        "Decoration": {
+            "Limette": "1/2 Stück"
+        },
+        "Instructions": "Limette achteln und stößeln, Zucker und Chrushedice hinzufügen. Erdbeerlimes und Cachaca hinzufügen und gut umrphren.",
+        "Typ": "alkoholhaltig",
+        "Kategorie": "Tropical",
+        "Glas": {
+            "Name": "Tumbler",
+            "Bild": "https://www.luchs-direkt.de/media/image/0b/c8/b0/931973lCb8Dibagf60.jpg"
+        },
+        "Bild": "https://xuxu.de/wp-content/uploads/2022/04/Xuxurinha.jpg"
+    },
+    {
+        "ID": "R-0000025",
+        "Name": "Yellow Bird",
+        "Spirits": {
+            "Rum (weiß)": "3cl",
+            "Galliano Vanille": "2cl",
+            "Triple Sec": "2cl"
+        },
+        "Modifyer": {
+            "Limettensaft": "2cl"
+        },
+        "Filler": {},
+        "Decoration": {
+            "Zitronenzeste": "1 Stück"
+        },
+        "Instructions": "Alle zutaten shaken und ins Glas strainen.",
+        "Typ": "alkoholhaltig",
+        "Kategorie": "Tropical",
+        "Glas": {
+            "Name": "Martiniglas",
+            "Bild": "https://www.thecocktaildb.com/images/media/drink/5noda61589575158.jpg"
+        },
+        "Bild": "https://www.thecocktaildb.com/images/media/drink/2t9r6w1504374811.jpg"
+    },
+    {
+        "ID": "R-0000026",
+        "Name": "Zorbatini",
+        "Spirits": {
+            "Vodka": "5cl",
+            "Ouzo": "2cl"
+        },
+        "Modifyer": {},
+        "Filler": {},
+        "Decoration": {
+            "Olive": "1 Stück"
+        },
+        "Instructions": "Alle Zutaten mit Eis shaken und ins Glas strainen.",
+        "Typ": "alkoholhaltig",
+        "Kategorie": "Tropical",
+        "Glas": {
+            "Name": "Tumbler",
+            "Bild": "https://www.thecocktaildb.com/images/media/drink/5noda61589575158.jpg"
+        },
+        "Bild": "https://www.thecocktaildb.com/images/media/drink/wtkqgb1485621155.jpg"
+    }
+]

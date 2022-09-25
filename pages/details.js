@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styled from "styled-components";
-import icon from "../src/details_icon.svg"
+import icon from "../src/icons/details_icon.svg"
 
 export default function Library() {
     return (
@@ -19,7 +19,7 @@ export default function Library() {
             <Detailsbox>
                 <Cocktailname>Tequila Sunrise</Cocktailname>
                 <Cocktailimage>Cocktailpicture</Cocktailimage>
-                <Cocktailalc>Alcoholoc or not</Cocktailalc>
+                <Cocktailalc>Alcoholic or not</Cocktailalc>
                 <Cocktailglas>Glas</Cocktailglas>
                 <Cocktailspirits>Spirits</Cocktailspirits>
                 <Cocktailmodifyer>Modifyer</Cocktailmodifyer>

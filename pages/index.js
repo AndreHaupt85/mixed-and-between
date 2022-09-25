@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styled from "styled-components";
-import icon from "../src/cocktail_icon.svg"
+import icon from "../src/icons/cocktail_icon.svg"
 import cocktail from "../src/tequila_sunrise.jpeg"
 
 export default function Home() {
