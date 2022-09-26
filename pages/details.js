@@ -17,15 +17,15 @@ export default function Library() {
                 </div>
             </Headlinebox>
             <Detailsbox>
-                <Cocktailname>Tequila Sunrise</Cocktailname>
-                <Cocktailimage>Cocktailpicture</Cocktailimage>
-                <Cocktailalc>Alcoholic or not</Cocktailalc>
-                <Cocktailglas>Glas</Cocktailglas>
-                <Cocktailspirits>Spirits</Cocktailspirits>
-                <Cocktailmodifyer>Modifyer</Cocktailmodifyer>
-                <Cocktailfiller>Filler</Cocktailfiller>
-                <Cocktailingreciance>Ingredience</Cocktailingreciance>
-                <Cocktaildescription>Description</Cocktaildescription>
+                <p>Tequila Sunrise</p>
+                <p>Cocktailpicture</p>
+                <p>Alcoholic or not</p>
+                <p>Glas</p>
+                <p>Spirits</p>
+                <p>Modifyer</p>
+                <p>Filler</p>
+                <p>Ingridence</p>
+                <p>Description</p>
             </Detailsbox>
         </div>
     )
@@ -56,40 +56,4 @@ const Detailsbox = styled.div`
 background: green;
 min-height: 90vh;
 display: grid;
-`
-
-const Cocktailname = styled.p`
-
-`
-
-const Cocktailimage = styled.p`
-
-`
-
-const Cocktailalc = styled.p`
-
-`
-
-const Cocktailglas = styled.p`
-
-`
-
-const Cocktailspirits = styled.p`
-
-`
-
-const Cocktailmodifyer = styled.p`
-
-`
-
-const Cocktailfiller = styled.p`
-
-`
-
-const Cocktailingreciance = styled.p`
-
-`
-
-const Cocktaildescription = styled.p`
-
 `
