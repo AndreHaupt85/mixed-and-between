@@ -60,7 +60,7 @@ margin: 0;
 display: flex;
 flex-direction: column;
 align-items: center;
-height: 80vh;
+height: 90vh;
 padding-top: 20px;
 padding-left: 20px;
 padding-right: 20px;
