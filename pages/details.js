@@ -24,7 +24,7 @@ export default function Library() {
                 <p>Spirits</p>
                 <p>Modifyer</p>
                 <p>Filler</p>
-                <p>Ingridence</p>
+                <p>ingredients</p>
                 <p>Description</p>
             </Detailsbox>
         </div>
