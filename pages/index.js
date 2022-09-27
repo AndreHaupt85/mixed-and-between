@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styled from "styled-components";
-import icon from "../src/cocktail_icon.svg"
+import icon from "../src/icons/cocktail_icon.svg"
 import cocktail from "../src/tequila_sunrise.jpeg"
 
 export default function Home() {
@@ -60,7 +60,7 @@ margin: 0;
 display: flex;
 flex-direction: column;
 align-items: center;
-height: 80vh;
+height: 90vh;
 padding-top: 20px;
 padding-left: 20px;
 padding-right: 20px;

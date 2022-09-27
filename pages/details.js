@@ -1,12 +1,12 @@
 import Image from "next/image";
 import styled from "styled-components";
-import icon from "../src/library_icon.svg"
+import icon from "../src/icons/details_icon.svg"
 
 export default function Library() {
     return (
         <div>
             <Headlinebox>
-                <Headline>Library</Headline>
+                <Headline>Details</Headline>
                 <div>
                     <Image
                         src={icon}
@@ -16,14 +16,21 @@ export default function Library() {
                     />
                 </div>
             </Headlinebox>
-            <Librarybox>
-                Old Fashioned
-            </Librarybox>
+            <Detailsbox>
+                <p>Tequila Sunrise</p>
+                <p>Cocktailpicture</p>
+                <p>Alcoholic or not</p>
+                <p>Glas</p>
+                <p>Spirits</p>
+                <p>Modifyer</p>
+                <p>Filler</p>
+                <p>ingredients</p>
+                <p>Description</p>
+            </Detailsbox>
         </div>
     )
 }
 
-// Header
 const Headlinebox = styled.div`
 color: #FFBA08;
 background: #7D451B;
@@ -45,6 +52,8 @@ margin: 0;
 font-size: 40px;
 `
 
-const Librarybox = styled.div`
+const Detailsbox = styled.div`
 background: green;
+min-height: 90vh;
+display: grid;
 `
