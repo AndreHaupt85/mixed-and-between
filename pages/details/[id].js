@@ -35,23 +35,27 @@ export default function Detailspage({ recipe }) {
             })}
             <p>{recipe.instructions}</p>
             <p>alcoholic</p>
-            <p>{recipe.category}</p>
+            <p>Cocktailart {recipe.category}</p>
             <ul>glass</ul>
-            {recipe.glass.map((glass, index) => {
-                return <li key={index}>{glass.name}</li>;
-            })}
-            {recipe.glass.map((glass, index) => {
-                return (
-                    <div key={index}><Image
+            {
+                recipe.glass.map((glass, index) => {
+                    return <li key={index}>{glass.name}</li>;
+                })
+            }
+            {
+                recipe.glass.map((glass, index) => {
+                    return (
+                        <div key={index}><Image
 
-                        src={glass.image}
-                        alt="${glass.name} image"
-                        width={80}
-                        height={80}
-                    />
-                    </div>
-                )
-            })}
+                            src={glass.image}
+                            alt="${glass.name} image"
+                            width={80}
+                            height={80}
+                        />
+                        </div>
+                    )
+                })
+            }
             <div>
                 <Image
                     src={recipe.image}
