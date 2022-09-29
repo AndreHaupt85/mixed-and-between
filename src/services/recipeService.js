@@ -12,5 +12,15 @@ export default async function getAllRecipes() {
 
     });
 
-    return recipesList
+    return recipesList;
+}
+
+export async function getRecipeById(recipeId) {
+    await dbConnect();
+
+    const recipe = await Recipe.findById(recipeId);
+
+    const { id, name, spirits, modifyer, filler, decoration, instructions, alcoholic, category, glass, image } = recipe;
+
+    return { id, name, spirits, modifyer, filler, decoration, instructions, alcoholic, category, glass, image };
 }

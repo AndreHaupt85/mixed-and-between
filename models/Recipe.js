@@ -11,7 +11,7 @@ const recipeSchema = new Schema({
     instructions: { type: String, required: true },
     alcoholic: { type: Boolean, required: true },
     category: { type: String, required: true },
-    glass: { type: Object, required: true },
+    glass: { type: Array, required: true },
     image: { type: String, required: true }
 });
 console.log();

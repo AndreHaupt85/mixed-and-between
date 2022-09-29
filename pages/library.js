@@ -6,9 +6,6 @@ import getAllRecipes from "../src/services/recipeService"
 
 export async function getServerSideProps() {
     const recipes = await getAllRecipes();
-
-    console.log(recipes, "get");
-
     return {
         props: {
             recipes: recipes,
@@ -17,7 +14,6 @@ export async function getServerSideProps() {
 }
 
 export default function Library({ recipes }) {
-    // console.log(recipes)
     return (
         <>
             <Headlinebox>
@@ -34,7 +30,7 @@ export default function Library({ recipes }) {
             <Librarybox>
                 {recipes.map((recipe) => (
                     <Cocktail key={recipe.id}>
-                        <Link href={`recipes/${recipe.id}`}>
+                        <Link href={`/details/${recipe.id}`}>
                             <a>{recipe.name}</a>
                         </Link>
                     </Cocktail>
