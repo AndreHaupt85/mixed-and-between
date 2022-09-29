@@ -42,8 +42,8 @@ export default function Detailspage({ recipe }) {
             })}
             {recipe.glass.map((glass, index) => {
                 return (
-                    <div><Image
-                        key={index}
+                    <div key={index}><Image
+
                         src={glass.image}
                         alt="${glass.name} image"
                         width={80}
