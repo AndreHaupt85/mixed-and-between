@@ -8,6 +8,7 @@ import decorationcornerrightbottom from "../../src/bottomright.svg";
 import decorationcornerleftbottom from "../../src/bottomleft.svg";
 import decorationbottom from "../../src/bottom.png"
 import Nav from "../../components/Nav";
+import alcoholic from "../../src/icons/alcoholic.svg"
 
 
 export async function getServerSideProps(context) {
@@ -28,7 +29,7 @@ export default function Detailspage({ recipe }) {
             <Outerborder>
                 <Midborder>
                     <Innerborder>
-                        <Topbox>
+                        <TopBox>
                             <Topleftcorner>
                                 <Image
                                     src={decorationcornerlefttop}
@@ -53,51 +54,13 @@ export default function Detailspage({ recipe }) {
                                     height={70}
                                 />
                             </Toprightcorner>
-                        </Topbox>
-                        <Navbox>
+                        </TopBox>
+                        <NavBox>
                             <Nav />
-                        </Navbox>
-                        <Detailsbox>
+                        </NavBox>
+                        <DetailsBox>
                             <Name> {recipe.name}</Name>
-                            <ul>Spirits</ul>
-                            {recipe.spirits.map((spirit, index) => {
-                                return <li key={index}>{spirit.name}: {spirit.amount}</li>;
-                            })}
-                            <ul>Modifyer</ul>
-                            {recipe.modifyer.map((modifyer, index) => {
-                                return <li key={index}>{modifyer.name}: {modifyer.amount}</li>;
-                            })}
-                            <ul>Filler</ul>
-                            {recipe.filler.map((filler, index) => {
-                                return <li key={index}>{filler.name}: {filler.amount}</li>;
-                            })}
-                            <ul>Dekoration</ul>
-                            {recipe.decoration.map((decoration, index) => {
-                                return <li key={index}>{decoration.name}: {decoration.amount}</li>;
-                            })}
-                            <p>{recipe.instructions}</p>
-                            <p>alcoholic</p>
-                            <p>Cocktailart {recipe.category}</p>
-                            <ul>glass</ul>
-                            {
-                                recipe.glass.map((glass, index) => {
-                                    return <GlassName key={index}>{glass.name}</GlassName>;
-                                })
-                            }
-                            {
-                                recipe.glass.map((glass, index) => {
-                                    return (
-                                        <GlassImage key={index}>
-                                            <Image
-                                                src={glass.image}
-                                                alt="${glass.name} image"
-                                                width={80}
-                                                height={80}
-                                            />
-                                        </GlassImage>
-                                    )
-                                })
-                            }
+                            <Backbutton>Back</Backbutton>
                             <Cocktailimage>
                                 <Image
                                     src={recipe.image}
@@ -106,8 +69,48 @@ export default function Detailspage({ recipe }) {
                                     height={300}
                                 />
                             </Cocktailimage>
-                        </Detailsbox>
-                        <Bottombox>
+                            <GlassBox>
+                                {
+                                    recipe.glass.map((glass, index) => {
+                                        return <p key={index}>{glass.name}</p>;
+                                    })
+                                }
+                            </GlassBox>
+                            <Alcoholic>
+                                <div>
+                                    <Image
+                                        src={alcoholic}
+                                        alt="alcoholic image"
+                                        width={40}
+                                        height={40}
+                                    />
+                                </div>
+                            </Alcoholic>
+                            <SpiritsBox>Spirits
+                                {recipe.spirits.map((spirit, index) => {
+                                    return <li key={index}>{spirit.name}: {spirit.amount}</li>;
+                                })}
+                            </SpiritsBox>
+                            <ModifierBox>Modifyer
+                                {recipe.modifyer.map((modifyer, index) => {
+                                    return <li key={index}>{modifyer.name}: {modifyer.amount}</li>;
+                                })}
+                            </ModifierBox>
+                            <FillerBox>Filler
+                                {recipe.filler.map((filler, index) => {
+                                    return <li key={index}>{filler.name}: {filler.amount}</li>;
+
+                                })}
+                            </FillerBox>
+                            <DecorationBox>Dekoration
+                                {recipe.decoration.map((decoration, index) => {
+                                    return <li key={index}>{decoration.name}: {decoration.amount}</li>;
+                                })}
+                            </DecorationBox>
+                            <InstructionBox>{recipe.instructions}</InstructionBox>
+                            <CocktailType>Cocktailart: {recipe.category}</CocktailType>
+                        </DetailsBox>
+                        <BottomBox>
                             <Bottomleftcorner>
                                 <Image
                                     src={decorationcornerleftbottom}
@@ -132,7 +135,7 @@ export default function Detailspage({ recipe }) {
                                     height={70}
                                 />
                             </Bottomrightcorner>
-                        </Bottombox>
+                        </BottomBox>
 
                     </Innerborder>
                 </Midborder>
@@ -166,10 +169,10 @@ const Innerborder = styled.div`
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 8% 10% 74% 8%;
+    grid-template-rows: 3% 9% 80% 8%;
 `
 
-const Topbox = styled.div`
+const TopBox = styled.div`
 grid-column: 1 / 5;
 grid-row: 1 / 2;
 display: flex;
@@ -186,46 +189,127 @@ const Topmid = styled.div`
 const Toprightcorner = styled.div`
 `
 
-const Navbox = styled.div`
+const NavBox = styled.div`
 grid-column: 1 / 5;
 grid-row: 2 / 3;
 justify-self: center;
 align-self: flex-start;
 `
 
-const Detailsbox = styled.div`
+const DetailsBox = styled.div`
 grid-column: 1 / 5;
 grid-row: 3 / 4;
-margin-bottom: 30px;
 display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
-grid-template-rows: 1fr 1fr 1fr 1fr;
-margin: 20px
+grid-template-columns: 70px 70px 70px 70px;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+margin-bottom: 80px;
+margin-left: 20px;
+margin-right: 20px;
+color: #E6DCCF;
 `
 
 const Name = styled.h2`
+border: 3px solid gold;
+padding: 15px;
+height: 130px;
+border-radius: 10px;
+box-shadow: 1px 5px 20px 10px #C68865;
 grid-column: 1 / 4;
 grid-row: 1 / 2;
 `
 
-const Cocktailimage = styled.div`
-width: 250px;
-grid-column: 1 / 4;
-grid-row: 2 / 4;
+const Backbutton = styled.button`
+width: 60px;
+height: 40px;
+margin: 10px;
+align-self: center;
+grid-column: 4 / 5;
+grid-row: 1 / 2;
 `
 
-const GlassName = styled.li`
-grid-column: 4 / 5;
+const Cocktailimage = styled.div`
+border: 3px solid gold;
+padding: 15px;
+border-radius: 10px;
+box-shadow: 1px 5px 20px 10px #C68865;
+grid-column: 1 / 5;
 grid-row: 2 / 3;
 `
 
-const GlassImage = styled.div`
-grid-column: 4 / 5;
+const GlassBox = styled.div`
+border: 3px solid gold;
+padding: 15px;
+border-radius: 10px;
+box-shadow: 1px 5px 20px 10px #C68865;
+grid-column: 1 / 3;
 grid-row: 3 / 4;
 `
 
+const Alcoholic = styled.p`
+border: 3px solid gold;
+padding: 15px;
+border-radius: 10px;
+box-shadow: 1px 5px 20px 10px #C68865;
+grid-column: 3 / 5;
+grid-row: 3 / 4;
+`
 
-const Bottombox = styled.div`
+const SpiritsBox = styled.ul`
+border: 3px solid gold;
+padding: 15px;
+border-radius: 10px;
+box-shadow: 1px 5px 20px 10px #C68865;
+grid-column: 1 / 3;
+grid-row: 4 / 5;
+`
+
+const ModifierBox = styled.ul`
+border: 3px solid gold;
+padding: 15px;
+border-radius: 10px;
+box-shadow: 1px 5px 20px 10px #C68865;
+grid-column: 3 / 5;
+grid-row: 4 / 5;
+`
+
+const FillerBox = styled.ul`
+border: 3px solid gold;
+padding: 15px;
+border-radius: 10px;
+box-shadow: 1px 5px 20px 10px #C68865;
+grid-column: 1 / 3;
+grid-row: 5 / 6;
+`
+
+const DecorationBox = styled.ul`
+border: 3px solid gold;
+padding: 15px;
+border-radius: 10px;
+box-shadow: 1px 5px 20px 10px #C68865;
+grid-column: 3 / 5;
+grid-row: 5 / 6;
+`
+
+const InstructionBox = styled.ul`
+border: 3px solid gold;
+padding: 15px;
+border-radius: 10px;
+box-shadow: 1px 5px 20px 10px #C68865;
+grid-column: 1 / 5;
+grid-row: 6 / 7;
+`
+
+const CocktailType = styled.div`
+border: 3px solid gold;
+padding: 15px;
+border-radius: 10px;
+box-shadow: 1px 5px 20px 10px #C68865;
+grid-column: 1 / 3;
+grid-row: 7 / 8;
+`
+
+
+const BottomBox = styled.div`
 grid-column: 1 / 5;
 grid-row: 4 / 5;
 display: flex;

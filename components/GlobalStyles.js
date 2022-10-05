@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
     *, *::after, *::before {
-        box-sizing: border-box
+        box-sizing: border-box;
     }
     body {
         background-color: #3C3D3F;

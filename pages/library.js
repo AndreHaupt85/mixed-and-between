@@ -56,9 +56,9 @@ export default function Library({ recipes }) {
                     <Librarybox>
                         {recipes.map((recipe) => (
                             <Cocktail key={recipe.id}>
-                                <CocktailLink href={`/details/${recipe.id}`}>
-                                    <a>{recipe.name}</a>
-                                </CocktailLink>
+                                <Link href={`/details/${recipe.id}`} passHref>
+                                    <CocktailLink>{recipe.name}</CocktailLink>
+                                </Link>
                             </Cocktail>
                         ))}
                     </Librarybox>

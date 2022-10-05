@@ -67,7 +67,7 @@ export default function Nav() {
                    
                     .navigation ul{
                         display: ${hamburgerOpen ? 'inline' : 'none'};
-                        background-color: blue;
+                        background-color: #3D3D3F;
                         height: 100vh;
                         width: 50vw;
                         margin-top: 50px;
