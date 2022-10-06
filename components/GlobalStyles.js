@@ -2,12 +2,12 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
     *, *::after, *::before {
-        box-sizing: border-box
+        box-sizing: border-box;
     }
     body {
-        background-color: #eee;
+        background-color: #3C3D3F;
         padding: 0;
-        margin: 0;
+        margin: 1;
     }
 `;
 
