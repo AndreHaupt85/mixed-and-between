@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import styled from "styled-components";
 import { getRecipeById } from "../../src/services/recipeService";
@@ -60,7 +61,9 @@ export default function Detailspage({ recipe }) {
                         </NavBox>
                         <DetailsBox>
                             <Name> {recipe.name}</Name>
-                            <Backbutton>Back</Backbutton>
+                            <Link href={"/library"}>
+                                <Backbutton>Back</Backbutton>
+                            </Link>
                             <Cocktailimage>
                                 <Image
                                     src={recipe.image}
@@ -77,14 +80,15 @@ export default function Detailspage({ recipe }) {
                                 }
                             </GlassBox>
                             <Alcoholic>
-                                <div>
+                                <GlassImageBox>
                                     <Image
                                         src={alcoholic}
                                         alt="alcoholic image"
                                         width={40}
                                         height={40}
+                                        layout="responsive"
                                     />
-                                </div>
+                                </GlassImageBox>
                             </Alcoholic>
                             <SpiritsBox>Spirits
                                 {recipe.spirits.map((spirit, index) => {
@@ -201,21 +205,20 @@ grid-column: 1 / 5;
 grid-row: 3 / 4;
 display: grid;
 grid-template-columns: 70px 70px 70px 70px;
-grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-margin-bottom: 80px;
+justify-content: center;
+align-items: center;
+margin-bottom: 100px;
 margin-left: 20px;
 margin-right: 20px;
 color: #E6DCCF;
 `
 
 const Name = styled.h2`
-border: 3px solid gold;
 padding: 15px;
-height: 130px;
+min-height: 130px;
 border-radius: 10px;
-box-shadow: 1px 5px 20px 10px #C68865;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 grid-column: 1 / 4;
-grid-row: 1 / 2;
 `
 
 const Backbutton = styled.button`
@@ -224,88 +227,98 @@ height: 40px;
 margin: 10px;
 align-self: center;
 grid-column: 4 / 5;
-grid-row: 1 / 2;
 `
 
 const Cocktailimage = styled.div`
-border: 3px solid gold;
-padding: 15px;
-border-radius: 10px;
-box-shadow: 1px 5px 20px 10px #C68865;
+height: 280px;
+/* padding: 15px; */
+margin-bottom: 20px;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 grid-column: 1 / 5;
-grid-row: 2 / 3;
 `
 
 const GlassBox = styled.div`
-border: 3px solid gold;
+width: 135px;
+min-height: 50px;
 padding: 15px;
+margin-right: 5px;
 border-radius: 10px;
-box-shadow: 1px 5px 20px 10px #C68865;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 grid-column: 1 / 3;
-grid-row: 3 / 4;
 `
 
-const Alcoholic = styled.p`
-border: 3px solid gold;
+const Alcoholic = styled.div`
+width: 135px;
+min-height: 50px;
 padding: 15px;
+margin-left: 5px;
 border-radius: 10px;
-box-shadow: 1px 5px 20px 10px #C68865;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 grid-column: 3 / 5;
-grid-row: 3 / 4;
+`
+
+const GlassImageBox = styled.div`
+width: 44px;
+justify-content: center;
+align-items: center;
 `
 
 const SpiritsBox = styled.ul`
-border: 3px solid gold;
+width: 135px;
+min-height: 100px;
 padding: 15px;
+margin-right: 5px;
 border-radius: 10px;
-box-shadow: 1px 5px 20px 10px #C68865;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 grid-column: 1 / 3;
-grid-row: 4 / 5;
 `
 
 const ModifierBox = styled.ul`
-border: 3px solid gold;
+width: 135px;
+min-height: 100px;
 padding: 15px;
+margin-left: 5px;
 border-radius: 10px;
-box-shadow: 1px 5px 20px 10px #C68865;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 grid-column: 3 / 5;
-grid-row: 4 / 5;
 `
 
 const FillerBox = styled.ul`
-border: 3px solid gold;
+width: 135px;
+min-height: 100px;
 padding: 15px;
+margin-right: 5px;
 border-radius: 10px;
-box-shadow: 1px 5px 20px 10px #C68865;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 grid-column: 1 / 3;
-grid-row: 5 / 6;
 `
 
 const DecorationBox = styled.ul`
-border: 3px solid gold;
+width: 135px;
+min-height: 100px;
 padding: 15px;
+margin-left: 5px;
 border-radius: 10px;
-box-shadow: 1px 5px 20px 10px #C68865;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 grid-column: 3 / 5;
-grid-row: 5 / 6;
 `
 
 const InstructionBox = styled.ul`
-border: 3px solid gold;
+min-height: 100px;
 padding: 15px;
 border-radius: 10px;
-box-shadow: 1px 5px 20px 10px #C68865;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 grid-column: 1 / 5;
-grid-row: 6 / 7;
 `
 
 const CocktailType = styled.div`
-border: 3px solid gold;
+width: 135px;
+min-height: 100px;
 padding: 15px;
+margin-right: 5px;
 border-radius: 10px;
-box-shadow: 1px 5px 20px 10px #C68865;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 grid-column: 1 / 3;
-grid-row: 7 / 8;
 `
 
 
