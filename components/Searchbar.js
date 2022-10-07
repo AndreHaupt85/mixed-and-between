@@ -44,6 +44,7 @@ export default function SearchBar({ placeholder, data }) {
                             <Link href={`/details/${recipe.id}`} passHref>
                                 <DataItemBox key={recipe.id}>
                                     <DataItem>{recipe.name}</DataItem>
+
                                 </DataItemBox>
                             </Link>
                         )
