@@ -42,7 +42,7 @@ export default function SearchBar({ placeholder, data }) {
                         console.log(recipe)
                         return (
                             <Link href={`/details/${recipe.id}`} passHref>
-                                <DataItemBox>
+                                <DataItemBox key={recipe.id}>
                                     <DataItem>{recipe.name}</DataItem>
                                 </DataItemBox>
                             </Link>
