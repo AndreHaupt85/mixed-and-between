@@ -41,8 +41,8 @@ export default function SearchBar({ placeholder, data }) {
                     {filteredData.slice(0, 15).map((recipe, key) => {
                         console.log(recipe)
                         return (
-                            <Link href={`/details/${recipe.id}`} passHref>
-                                <DataItemBox key={recipe.id}>
+                            <Link key={recipe.id} href={`/details/${recipe.id}`} passHref>
+                                <DataItemBox>
                                     <DataItem>{recipe.name}</DataItem>
 
                                 </DataItemBox>
