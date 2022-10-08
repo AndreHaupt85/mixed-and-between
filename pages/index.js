@@ -8,6 +8,8 @@ import decorationcornerrightbottom from "../src/bottomright.svg";
 import decorationcornerleftbottom from "../src/bottomleft.svg";
 import decorationtop from "../src/top.png";
 import decorationbottom from "../src/bottom.png"
+import SearchBar from "../components/Searchbar";
+import Recipes from "../data/recipes.json"
 
 export default function Home() {
   return (
@@ -54,6 +56,7 @@ export default function Home() {
               Tequila Sunrise
             </Cocktailname>
           </Cocktailbox>
+          <SearchBar placeholder="Enter a Cocktailname..." data={Recipes} />
           <Bottombox>
             <Bottomleftcorner>
               <Image
@@ -111,7 +114,7 @@ const Innerborder = styled.div`
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 8% 10% 74% 8%;
+    grid-template-rows: 8% 10% 44% 30% 8%;
 `
 const Topbox = styled.div`
 grid-column: 1 / 5;
@@ -149,7 +152,7 @@ color: #DE9B72;
 `
 
 const Cocktailimagebox = styled.div`
-width: 250px;
+width: 200px;
 `
 
 const Cocktailname = styled.p`
@@ -158,10 +161,11 @@ font-size: 45px;
 
 const Bottombox = styled.div`
 grid-column: 1 / 4;
-grid-row: 4 / 5;
+grid-row: 5 / 6;
 display: flex;
 justify-content: space-between;
 align-self: flex-end;
+z-index: -10;
 `
 
 const Bottomleftcorner = styled.div`
