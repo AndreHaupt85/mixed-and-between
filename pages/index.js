@@ -9,9 +9,20 @@ import decorationcornerleftbottom from "../src/bottomleft.svg";
 import decorationtop from "../src/top.png";
 import decorationbottom from "../src/bottom.png"
 import SearchBar from "../components/Searchbar";
-import Recipes from "../data/recipes.json"
+// import Recipes from "../data/recipes.json"
+import getAllRecipes from "../src/services/recipeService";
 
-export default function Home() {
+export async function getServerSideProps() {
+  const recipes = await getAllRecipes();
+  console.log(recipes);
+  return {
+    props: {
+      recipes: recipes,
+    },
+  };
+}
+
+export default function Home(recipes) {
   return (
     <Outerborder>
       <Midborder>
@@ -56,7 +67,7 @@ export default function Home() {
               Tequila Sunrise
             </Cocktailname>
           </Cocktailbox>
-          <SearchBar placeholder="Enter a Cocktailname..." data={Recipes} />
+          <SearchBar placeholder="Enter a Cocktailname..." data={recipes} />
           <Bottombox>
             <Bottomleftcorner>
               <Image

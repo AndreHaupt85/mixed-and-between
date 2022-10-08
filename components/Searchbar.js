@@ -5,14 +5,14 @@ import Link from "next/link";
 import { useState } from "react";
 
 export default function SearchBar({ placeholder, data }) {
-
+    console.log(data)
     const [filteredData, setFilteredData] = useState([]);
     const [wordEntered, setwordEntered] = useState("");
 
     const handleFilter = (event) => {
         const searchWord = event.target.value
         setwordEntered(searchWord);
-        const newFilter = data.filter((value) => {
+        const newFilter = data.recipes.filter((value) => {
             return value.name.toLowerCase().includes(searchWord.toLowerCase());
         });
 
@@ -44,7 +44,6 @@ export default function SearchBar({ placeholder, data }) {
                             <Link key={recipe.id} href={`/details/${recipe.id}`} passHref>
                                 <DataItemBox>
                                     <DataItem>{recipe.name}</DataItem>
-
                                 </DataItemBox>
                             </Link>
                         )
