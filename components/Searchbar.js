@@ -5,7 +5,6 @@ import Link from "next/link";
 import { useState } from "react";
 
 export default function SearchBar({ placeholder, data }) {
-    console.log(data)
     const [filteredData, setFilteredData] = useState([]);
     const [wordEntered, setwordEntered] = useState("");
 
@@ -39,7 +38,6 @@ export default function SearchBar({ placeholder, data }) {
             {filteredData.length != 0 && (
                 <DataResult>
                     {filteredData.slice(0, 15).map((recipe, key) => {
-                        console.log(recipe)
                         return (
                             <Link key={recipe.id} href={`/details/${recipe.id}`} passHref>
                                 <DataItemBox>
