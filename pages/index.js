@@ -1,6 +1,5 @@
 import Image from "next/image";
 import styled from "styled-components";
-import cocktail from "../src/tequila_sunrise.jpeg"
 import Nav from "../components/Nav";
 import decorationcornerlefttop from "../src/topleft.svg";
 import decorationcornerrighttop from "../src/topright.svg";
@@ -9,12 +8,11 @@ import decorationcornerleftbottom from "../src/bottomleft.svg";
 import decorationtop from "../src/top.png";
 import decorationbottom from "../src/bottom.png"
 import SearchBar from "../components/Searchbar";
-// import Recipes from "../data/recipes.json"
+import Gallery from "../components/Gallery";
 import getAllRecipes from "../src/services/recipeService";
 
 export async function getServerSideProps() {
   const recipes = await getAllRecipes();
-  console.log(recipes);
   return {
     props: {
       recipes: recipes,
@@ -22,7 +20,7 @@ export async function getServerSideProps() {
   };
 }
 
-export default function Home(recipes) {
+export default function Home({ recipes }) {
   return (
     <Outerborder>
       <Midborder>
@@ -56,18 +54,8 @@ export default function Home(recipes) {
           <Navbox>
             <Nav />
           </Navbox>
-          <Cocktailbox>
-            <Cocktailimagebox>
-              <Image
-                src={cocktail}
-                alt="menu icon"
-              />
-            </Cocktailimagebox>
-            <Cocktailname>
-              Tequila Sunrise
-            </Cocktailname>
-          </Cocktailbox>
-          <SearchBar placeholder="Enter a Cocktailname..." data={recipes} />
+          <Gallery recipes={recipes} />
+          <SearchBar placeholder="Enter a Cocktailname..." recipes={recipes} />
           <Bottombox>
             <Bottomleftcorner>
               <Image
@@ -125,7 +113,7 @@ const Innerborder = styled.div`
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 8% 10% 44% 30% 8%;
+    grid-template-rows: 8% 8% 46% 30% 8%;
 `
 const Topbox = styled.div`
 grid-column: 1 / 5;
