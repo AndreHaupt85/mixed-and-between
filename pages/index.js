@@ -13,7 +13,6 @@ import getAllRecipes from "../src/services/recipeService";
 
 export async function getServerSideProps() {
   const recipes = await getAllRecipes();
-  console.log(recipes);
   return {
     props: {
       recipes: recipes,
@@ -55,8 +54,8 @@ export default function Home({ recipes }) {
           <Navbox>
             <Nav />
           </Navbox>
-          <Gallery data={recipes} />
-          <SearchBar placeholder="Enter a Cocktailname..." data={recipes} />
+          <Gallery recipes={recipes} />
+          <SearchBar placeholder="Enter a Cocktailname..." recipes={recipes} />
           <Bottombox>
             <Bottomleftcorner>
               <Image

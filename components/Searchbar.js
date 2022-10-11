@@ -4,17 +4,16 @@ import CloseIcon from '@mui/icons-material/Close';
 import Link from "next/link";
 import { useState } from "react";
 
-export default function SearchBar({ placeholder, data }) {
+export default function SearchBar({ placeholder, recipes }) {
     const [filteredData, setFilteredData] = useState([]);
     const [wordEntered, setwordEntered] = useState("");
 
     const handleFilter = (event) => {
         const searchWord = event.target.value
         setwordEntered(searchWord);
-        const newFilter = data.recipes.filter((value) => {
+        const newFilter = recipes.filter((value) => {
             return value.name.toLowerCase().includes(searchWord.toLowerCase());
         });
-
         if (searchWord === "") {
             setFilteredData([]);
         } else {

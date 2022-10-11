@@ -14,7 +14,6 @@ const recipeSchema = new Schema({
     glass: { type: Array, required: true },
     image: { type: String, required: true }
 });
-console.log();
 
 const Recipe =
     mongoose.models.Recipe || mongoose.model("Recipe", recipeSchema)

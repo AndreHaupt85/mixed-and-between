@@ -12,7 +12,6 @@ import decorationbottom from "../src/bottom.png"
 
 export async function getServerSideProps() {
     const recipes = await getAllRecipes();
-    console.log(recipes);
     return {
         props: {
             recipes: recipes,
