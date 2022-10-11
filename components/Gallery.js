@@ -17,13 +17,13 @@ export default function Gallery({ recipes }) {
     }, 2000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [recipes]);
 
   return (
     <GalleryBox>
       {recipes.map((cocktail) => {
         return (
-          <CocktailBox position={xPosition}>
+          <CocktailBox key={recipes.id} position={xPosition}>
             <Name>{cocktail.name}</Name>
             <ImageBox>
               <Image
@@ -74,8 +74,6 @@ const CocktailBox = styled.div`
 const ImageBox = styled.div`
   height: 28vh;
   width: 60vw;
-  align-self: center;
-  justify-self: center;
 `;
 
 const Name = styled.p`
