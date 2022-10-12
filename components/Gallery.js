@@ -24,8 +24,8 @@ export default function Gallery({ recipes }) {
     <GalleryBox>
       {recipes.map((cocktail) => {
         return (
-          <Link href={`/details/${cocktail.id}`}>
-            <CocktailBox key={recipes.id} position={xPosition}>
+          <Link key={recipes.id} href={`/details/${cocktail.id}`}>
+            <CocktailBox position={xPosition}>
               <Name>{cocktail.name}</Name>
               <ImageBox>
                 <Image
