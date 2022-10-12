@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 
 export default function Gallery({ recipes }) {
   const [xPosition, setXPosition] = useState(0);
@@ -8,8 +9,8 @@ export default function Gallery({ recipes }) {
   useEffect(() => {
     const interval = setInterval(() => {
       setXPosition((previousXPosition) => {
-        if (previousXPosition < recipes.length * 258) {
-          return previousXPosition + 258;
+        if (previousXPosition < recipes.length * 280 - 280) {
+          return previousXPosition + 280;
         } else {
           return 0;
         }
@@ -23,18 +24,20 @@ export default function Gallery({ recipes }) {
     <GalleryBox>
       {recipes.map((cocktail) => {
         return (
-          <CocktailBox key={recipes.id} position={xPosition}>
-            <Name>{cocktail.name}</Name>
-            <ImageBox>
-              <Image
-                src={cocktail.image}
-                alt="cocktail image"
-                width={300}
-                height={300}
-                layout="responsive"
-              />
-            </ImageBox>
-          </CocktailBox>
+          <Link href={`/details/${cocktail.id}`}>
+            <CocktailBox key={recipes.id} position={xPosition}>
+              <Name>{cocktail.name}</Name>
+              <ImageBox>
+                <Image
+                  src={cocktail.image}
+                  alt="cocktail image"
+                  width={10}
+                  height={10}
+                  layout="responsive"
+                />
+              </ImageBox>
+            </CocktailBox>
+          </Link>
         );
       })}
     </GalleryBox>
@@ -42,41 +45,32 @@ export default function Gallery({ recipes }) {
 }
 
 const GalleryBox = styled.div`
-  width: 80vw;
-  height: 40vh;
-  grid-column: 1 / 4;
-  grid-row: 3 / 4;
-  justify-items: center;
-  justify-self: center;
-  overflow: hidden;
-  overflow: auto;
-  &::-webkit-scrollbar {
-    display: none;
-  }
+  max-width: 280px;
+  height: 355px;
   display: flex;
-  flex-direction: row;
+  overflow: auto;
+  border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  padding-left: 40px;
-  padding-right: 40px;
 `;
 
 const CocktailBox = styled.div`
-  display: grid;
-  grid-template-rows: 20% 20%;
-  margin-right: 10px;
-  margin-right: 10px;
+  max-width: 290px;
+  max-height: 220px;
   transition: transform 2s ease-in-out;
   transform: ${(props) => 'translateX(-' + props.position + 'px)'};
 `;
 
 const ImageBox = styled.div`
-  height: 28vh;
-  width: 60vw;
+  width: 280px;
+  height: 280px;
 `;
 
 const Name = styled.p`
-  justify-self: center;
+  color: #de9b72;
   font-size: 20px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
 `;

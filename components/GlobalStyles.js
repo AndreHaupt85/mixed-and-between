@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
     *, *::after, *::before {
@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
         background-color: #3C3D3F;
         padding: 0;
         margin: 1;
+        font-family: 'Libre Caslon Display', serif;
     }
 `;
 
