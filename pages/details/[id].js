@@ -51,9 +51,9 @@ export default function Detailspage({ recipe }) {
           Spirits
           {recipe.spirits.map((spirit, index) => {
             return (
-              <li key={index}>
+              <Listitems key={index}>
                 {spirit.name}: {spirit.amount}
-              </li>
+              </Listitems>
             );
           })}
         </SpiritsBox>
@@ -61,9 +61,9 @@ export default function Detailspage({ recipe }) {
           Modifyer
           {recipe.modifyer.map((modifyer, index) => {
             return (
-              <li key={index}>
+              <Listitems key={index}>
                 {modifyer.name}: {modifyer.amount}
-              </li>
+              </Listitems>
             );
           })}
         </ModifierBox>
@@ -71,9 +71,9 @@ export default function Detailspage({ recipe }) {
           Filler
           {recipe.filler.map((filler, index) => {
             return (
-              <li key={index}>
+              <Listitems key={index}>
                 {filler.name}: {filler.amount}
-              </li>
+              </Listitems>
             );
           })}
         </FillerBox>
@@ -81,9 +81,9 @@ export default function Detailspage({ recipe }) {
           Dekoration
           {recipe.decoration.map((decoration, index) => {
             return (
-              <li key={index}>
+              <Listitems key={index}>
                 {decoration.name}: {decoration.amount}
-              </li>
+              </Listitems>
             );
           })}
         </DecorationBox>
@@ -167,6 +167,7 @@ const GlassImageBox = styled.div`
 
 const SpiritsBox = styled.ul`
   grid-column: 1 / 5;
+  font-size: larger;
   min-height: 100px;
   padding: 15px;
   border-radius: 10px;
@@ -178,9 +179,9 @@ const SpiritsBox = styled.ul`
 
 const ModifierBox = styled.ul`
   grid-column: 1 / 5;
+  font-size: larger;
   min-height: 100px;
   padding: 15px;
-  margin-left: 5px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
@@ -190,9 +191,9 @@ const ModifierBox = styled.ul`
 
 const FillerBox = styled.ul`
   grid-column: 1 / 5;
+  font-size: larger;
   min-height: 100px;
   padding: 15px;
-  margin-right: 5px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
@@ -202,9 +203,9 @@ const FillerBox = styled.ul`
 
 const DecorationBox = styled.ul`
   grid-column: 1 / 5;
+  font-size: larger;
   min-height: 100px;
   padding: 15px;
-  margin-left: 5px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
@@ -214,7 +215,8 @@ const DecorationBox = styled.ul`
 
 const InstructionBox = styled.ul`
   grid-column: 1 / 5;
-  min-heighte 100px;
+  font-size: larger;
+  min-height: 100px;
   padding: 15px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
@@ -227,9 +229,13 @@ const CocktailType = styled.div`
   width: 135px;
   min-height: 100px;
   padding: 15px;
-  margin-right: 5px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+`;
+
+const Listitems = styled.li`
+  padding-left: 15px;
+  font-size: medium;
 `;
