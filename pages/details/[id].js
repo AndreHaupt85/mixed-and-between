@@ -226,9 +226,8 @@ const InstructionBox = styled.ul`
 `;
 
 const CocktailType = styled.div`
-  grid-column: 1 / 3;
+  grid-column: 1 / 5;
   font-size: larger;
-  width: 135px;
   min-height: 100px;
   padding: 15px;
   border-radius: 10px;
