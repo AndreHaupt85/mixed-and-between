@@ -6,37 +6,37 @@ import decorationtop from '../src/top.png';
 
 export default function Topborder() {
   return (
-    <Borderbox>
-      <Topleftcorner>
+    <BorderBox>
+      <TopLeftCorner>
         <Image
           src={decorationcornerlefttop}
           alt="menu icon"
           width={70}
           height={70}
         />
-      </Topleftcorner>
-      <Topmid>
+      </TopLeftCorner>
+      <TopMid>
         <Image src={decorationtop} alt="menu icon" width={300} height={50} />
-      </Topmid>
-      <Toprightcorner>
+      </TopMid>
+      <TopRightCorner>
         <Image
           src={decorationcornerrighttop}
           alt="menu icon"
           width={70}
           height={70}
         />
-      </Toprightcorner>
-    </Borderbox>
+      </TopRightCorner>
+    </BorderBox>
   );
 }
 
-const Borderbox = styled.div`
+const BorderBox = styled.div`
   display: flex;
   justify-content: space-between;
 `;
 
-const Topleftcorner = styled.div``;
+const TopLeftCorner = styled.div``;
 
-const Topmid = styled.div``;
+const TopMid = styled.div``;
 
-const Toprightcorner = styled.div``;
+const TopRightCorner = styled.div``;

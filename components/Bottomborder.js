@@ -6,40 +6,40 @@ import decorationbottom from '../src/bottom.png';
 
 export default function Bottomborder() {
   return (
-    <Borderbox>
-      <Bottomleftcorner>
+    <BorderBox>
+      <BottomLeftCorner>
         <Image
           src={decorationcornerleftbottom}
           alt="menu icon"
           width={70}
           height={70}
         />
-      </Bottomleftcorner>
-      <Bottommid>
+      </BottomLeftCorner>
+      <BottomMid>
         <Image src={decorationbottom} alt="menu icon" width={300} height={50} />
-      </Bottommid>
-      <Bottomrightcorner>
+      </BottomMid>
+      <BottomRightCorner>
         <Image
           src={decorationcornerrightbottom}
           alt="menu icon"
           width={70}
           height={70}
         />
-      </Bottomrightcorner>
-    </Borderbox>
+      </BottomRightCorner>
+    </BorderBox>
   );
 }
 
-const Borderbox = styled.div`
+const BorderBox = styled.div`
   display: flex;
   justify-content: space-between;
   z-index: -10;
 `;
 
-const Bottomleftcorner = styled.div``;
+const BottomLeftCorner = styled.div``;
 
-const Bottommid = styled.div`
+const BottomMid = styled.div`
   align-self: flex-end;
 `;
 
-const Bottomrightcorner = styled.div``;
+const BottomRightCorner = styled.div``;

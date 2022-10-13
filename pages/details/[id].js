@@ -23,16 +23,16 @@ export default function Detailspage({ recipe }) {
       <DetailsBox>
         <Name> {recipe.name}</Name>
         <Link href={'/library'}>
-          <Backbutton>Back</Backbutton>
+          <BackButton>Back</BackButton>
         </Link>
-        <Cocktailimage>
+        <CocktailImage>
           <Image
             src={recipe.image}
             alt="${recipe.name} image"
             width={300}
             height={300}
           />
-        </Cocktailimage>
+        </CocktailImage>
         <GlassBox>
           {recipe.glass.map((glass, index) => {
             return <p key={index}>{glass.name}</p>;
@@ -51,9 +51,9 @@ export default function Detailspage({ recipe }) {
           Spirits
           {recipe.spirits.map((spirit, index) => {
             return (
-              <Listitems key={index}>
+              <ListItems key={index}>
                 {spirit.name}: {spirit.amount}
-              </Listitems>
+              </ListItems>
             );
           })}
         </SpiritsBox>
@@ -61,9 +61,9 @@ export default function Detailspage({ recipe }) {
           Modifyer
           {recipe.modifyer.map((modifyer, index) => {
             return (
-              <Listitems key={index}>
+              <ListItems key={index}>
                 {modifyer.name}: {modifyer.amount}
-              </Listitems>
+              </ListItems>
             );
           })}
         </ModifierBox>
@@ -71,9 +71,9 @@ export default function Detailspage({ recipe }) {
           Filler
           {recipe.filler.map((filler, index) => {
             return (
-              <Listitems key={index}>
+              <ListItems key={index}>
                 {filler.name}: {filler.amount}
-              </Listitems>
+              </ListItems>
             );
           })}
         </FillerBox>
@@ -81,9 +81,9 @@ export default function Detailspage({ recipe }) {
           Dekoration
           {recipe.decoration.map((decoration, index) => {
             return (
-              <Listitems key={index}>
+              <ListItems key={index}>
                 {decoration.name}: {decoration.amount}
-              </Listitems>
+              </ListItems>
             );
           })}
         </DecorationBox>
@@ -111,7 +111,7 @@ const Name = styled.h2`
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 `;
 
-const Backbutton = styled.button`
+const BackButton = styled.button`
   grid-column: 4 / 5;
   width: 60px;
   height: 40px;
@@ -126,7 +126,7 @@ const Backbutton = styled.button`
   background: none;
 `;
 
-const Cocktailimage = styled.div`
+const CocktailImage = styled.div`
   margin-bottom: 20px;
   height: 275px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
@@ -235,7 +235,7 @@ const CocktailType = styled.div`
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 `;
 
-const Listitems = styled.li`
+const ListItems = styled.li`
   padding-left: 15px;
   font-size: medium;
 `;

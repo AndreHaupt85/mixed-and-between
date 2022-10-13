@@ -29,7 +29,7 @@ export default function SearchBar({ placeholder, recipes }) {
   return (
     <Search>
       <SearchInputs>
-        <Inputfield
+        <InputField
           type="text"
           placeholder={placeholder}
           value={wordEntered}
@@ -69,7 +69,7 @@ const SearchInputs = styled.div`
   display: flex;
 `;
 
-const Inputfield = styled.input`
+const InputField = styled.input`
   background-color: white;
   border: 0;
   border-radius: 2px;

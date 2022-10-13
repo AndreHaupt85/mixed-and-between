@@ -14,7 +14,7 @@ export async function getServerSideProps() {
 
 export default function Library({ recipes }) {
   return (
-    <Librarybox>
+    <LibraryBox>
       {recipes.map((recipe) => (
         <Cocktail key={recipe.id}>
           <Link href={`/details/${recipe.id}`} passHref>
@@ -22,11 +22,11 @@ export default function Library({ recipes }) {
           </Link>
         </Cocktail>
       ))}
-    </Librarybox>
+    </LibraryBox>
   );
 }
 
-const Librarybox = styled.ul``;
+const LibraryBox = styled.ul``;
 
 const Cocktail = styled.li`
   color: #debfab;

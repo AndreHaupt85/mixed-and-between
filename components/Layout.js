@@ -5,22 +5,22 @@ import Bottomborder from './Bottomborder';
 
 export default function Layout({ children }) {
   return (
-    <Outerborder>
-      <Midborder>
-        <Innerborder>
-          <Contentbox>
+    <OuterBorder>
+      <MidBorder>
+        <InnerBorder>
+          <ContentBox>
             <Topborder />
             <Nav />
-            <Mainbox>{children}</Mainbox>
-          </Contentbox>
+            <MainBox>{children}</MainBox>
+          </ContentBox>
           <Bottomborder />
-        </Innerborder>
-      </Midborder>
-    </Outerborder>
+        </InnerBorder>
+      </MidBorder>
+    </OuterBorder>
   );
 }
 
-const Outerborder = styled.div`
+const OuterBorder = styled.div`
   border: 2px solid #de9b72;
   min-height: 94vh;
   min-width: 98vw;
@@ -28,7 +28,7 @@ const Outerborder = styled.div`
   margin: 0 auto;
 `;
 
-const Midborder = styled.div`
+const MidBorder = styled.div`
   border: 6px solid #de9b72;
   min-height: 93vh;
   min-width: 94vw;
@@ -36,7 +36,7 @@ const Midborder = styled.div`
   margin: auto;
 `;
 
-const Innerborder = styled.div`
+const InnerBorder = styled.div`
   border: 2px solid #de9b72;
   min-height: 92vh;
   height: 100%;
@@ -48,12 +48,12 @@ const Innerborder = styled.div`
   justify-content: space-between;
 `;
 
-const Contentbox = styled.div`
+const ContentBox = styled.div`
   display: flex;
   flex-direction: column;
 `;
 
-const Mainbox = styled.main`
+const MainBox = styled.main`
   display: flex;
   flex-direction: column;
   align-self: center;

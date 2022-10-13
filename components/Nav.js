@@ -6,10 +6,10 @@ export default function Nav() {
     <>
       <Navbar>
         <Link href={'/'} passHref>
-          <Linkstyle>Home</Linkstyle>
+          <LinkStyle>Home</LinkStyle>
         </Link>
         <Link href={'/library'} passHref>
-          <Linkstyle>Library</Linkstyle>
+          <LinkStyle>Library</LinkStyle>
         </Link>
       </Navbar>
     </>
@@ -22,7 +22,7 @@ const Navbar = styled.div`
   justify-items: baseline;
 `;
 
-const Linkstyle = styled.a`
+const LinkStyle = styled.a`
   font-size: 30px;
   border: 2px solid #de9b72;
   margin-left: 5px;
