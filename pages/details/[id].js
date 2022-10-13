@@ -41,9 +41,9 @@ export default function Detailspage({ recipe }) {
         <Alcoholic>
           <GlassImageBox>
             {recipe.alcoholic === true ? (
-              <LocalBarIcon fontSize="large" />
+              <LocalBarIcon style={{ width: 50, height: 50 }} />
             ) : (
-              <NoDrinksIcon fontSize="large" />
+              <NoDrinksIcon style={{ width: 50, height: 50 }} />
             )}
           </GlassImageBox>
         </Alcoholic>
@@ -137,10 +137,10 @@ const Cocktailimage = styled.div`
 
 const GlassBox = styled.div`
   grid-column: 1 / 3;
+  font-size: larger;
   width: 135px;
   min-height: 50px;
   padding: 15px;
-  margin-right: 5px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
@@ -151,18 +151,17 @@ const Alcoholic = styled.div`
   grid-column: 3 / 5;
   width: 135px;
   min-height: 50px;
-  padding: 15px;
-  margin-left: 5px;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 `;
 
 const GlassImageBox = styled.div`
-  width: 10u0px;
-  justify-content: center;
-  align-items: center;
+  width: 50px;
 `;
 
 const SpiritsBox = styled.ul`
@@ -226,6 +225,7 @@ const InstructionBox = styled.ul`
 
 const CocktailType = styled.div`
   grid-column: 1 / 3;
+  font-size: larger;
   width: 135px;
   min-height: 100px;
   padding: 15px;
