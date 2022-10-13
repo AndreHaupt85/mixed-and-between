@@ -31,7 +31,7 @@ const LibraryBox = styled.ul``;
 const Cocktail = styled.li`
   color: #debfab;
   list-style: none;
-  font-size: 25px;
+  font-size: 22px;
 `;
 
 const CocktailLink = styled.a`

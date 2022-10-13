@@ -17,7 +17,6 @@ export async function getServerSideProps(context) {
 }
 
 export default function Detailspage({ recipe }) {
-  console.log(recipe.alcoholic);
   return (
     <>
       <DetailsBox>
@@ -106,6 +105,9 @@ const Name = styled.h2`
   grid-column: 1 / 4;
   min-height: 130px;
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
