@@ -48,7 +48,7 @@ const GalleryBox = styled.div`
   max-width: 280px;
   height: 355px;
   display: flex;
-  overflow: auto;
+  overflow: hidden;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
