@@ -10,7 +10,11 @@ npm run dev
 ## App Impressions
 
 <div>
-<img src="./public/Harvestly.gif"
+<img src="./public/mainpage.png"
+     height="410px"/>
+     <img src="./public/library.png"
+     height="410px"/>
+     <img src="./public/detailpage.png"
      height="410px"/>
 </div>
 
