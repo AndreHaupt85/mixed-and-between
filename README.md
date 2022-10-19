@@ -1,21 +1,39 @@
+## Introduction
+
+**This is a capstone project for [neuefische](https://www.neuefische.de/) web development bootcamp.**
+
+
 ## Mixed and Between
 
 Planing a evening with your freinds at home? The next birthdayparty is comming?
 Then u will need some drinks to serve.
 
-First, run the development server:
-
-npm run dev
-
 ## App Impressions
 
 <div>
-<img src="./public/mainpage.png"
-     height="410px"/>
-     <img src="./public/library.png"
-     height="410px"/>
-     <img src="./public/detailpage.png"
-     height="410px"/>
+<img src="./src/mainpage.png"
+     height="350px"/>
+     <img src="./src/library.png"
+     height="350px"/>
+     <img src="./src/detailpage.png"
+     height="350px"/>
 </div>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## TechStack
+
+- React
+- React Hooks
+- React Router
+- Express
+- Styled Components
+- Jest
+- Node.js
+- MongoDB with mongoose
+
+
+## How to Run the App
+
+- clone this repository
+- install all npm dependencies by using `npm install`
+- to run the app in development mode `npm run dev`, then open http://localhost:3000 to view it in the browser
+  to create a build ready for deploying: `npm run build`
