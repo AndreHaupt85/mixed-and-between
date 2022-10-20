@@ -5,7 +5,7 @@
 
 ## Mixed and Between
 
-Planing a evening with your freinds at home? The next birthdayparty is comming?
+Planning an evening with your friends at home? The next birthday party is coming?
 Then u will need some drinks to serve.
 
 ## App Impressions
