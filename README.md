@@ -6,7 +6,7 @@
 ## Mixed and Between
 
 Planning an evening with your friends at home? The next birthday party is coming?
-Then u will need some drinks to serve.
+Then you will need some drinks to serve.
 
 ## App Impressions
 
